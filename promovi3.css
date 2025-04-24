@@ -1,0 +1,87 @@
+/* Estilo general del fondo y el cuerpo */
+body {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    margin: 0;
+    position: relative;
+}
+
+/* Contenedor principal */
+.container {
+    width: 1200px;
+    height: 600px;
+    background-color: #2D4E51;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid #000000;
+    overflow: visible;
+    position: relative;
+}
+
+/* Contenedor para el SVG */
+.pt {
+    overflow: visible; 
+    opacity: 0.5; 
+    background: transparent;
+    width: 10000px;
+    height: 600px;
+    z-index: 0;
+    position: relative;
+    top: -150px;
+    left: -190px;
+    scale: 0.9;
+}
+
+/* Estilo para los países en el mapa */
+.country {
+    fill: #203c3c;
+    stroke: #000000;
+    vector-effect: non-scaling-stroke;
+    stroke-width: 1px;
+    
+}
+
+/* Color inicial para los países destacados */
+.country.highlighted {
+    fill: #203c3c;
+}
+
+
+/* Estilo para la selección*/
+.menu {
+    background-color: #3D7373;
+    padding: 0px 0;
+    z-index: 1000;
+    position: relative;
+    top: 0px;
+    left: 600px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+

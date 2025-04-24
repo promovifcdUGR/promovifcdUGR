@@ -1,0 +1,131 @@
+<!-- SEGUNDA PRUEBA DEL PROYECTO MARGARITA -->
+
+<!-- AUTOR: Alejandro Rosa Sarabia
+     FECHA DEL COMENTARIO 30/11/2024-->
+
+<!-- Esta parte del proyecto sería el mapa de la ciudad, donde a la izquierda en un <<container>> aparecería
+     en un lado un mapa de la ciudad sobre la que queremos obtener la información, a la derecha aparecería toda
+     la información seleccionable por un mapa (COMENTARIO DE AUTOR: 30/11, todavía falta por incluir el menú en
+     este proyecto) que la podremos catalogar en información sobre la ciudad e información académica (COMENTARIO
+     DE AUTOR 30/11: Todavía no se han decidido de manera oficial los nombres que se van a poner ahí), para buscar
+     el mapa se empleará la función de integración de mapas de Google Maps -->
+
+<!-- VERSIÓN FINAL, POR FIN-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEGUNDA PRUEBA PROYECTO MARGARITA</title>
+  <link rel="stylesheet" href="promovi2.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="menu">
+        <ul>
+            <li><a href="europaCAV.html">Atrás</a></li>
+            <li >
+                <a href="">Torun (CAV)</a>
+                
+            </li>
+        </ul> 
+    </nav>
+    <!-- Información a la izquierda -->
+    <div class="container3">
+      <p><b>Contacto:</b> <a href="https://www.umk.pl/en/erasmus/students/">Página Web </a> y <a href="mailto:prorektorka-barwiolek@umk.pl">Correo</a></p >
+        <p><b>Código:</b> PL TORUN 01</p>
+       <h2>Asignaturas</h2>
+       <p><i>La equivalencia de asignaturas que se muestran son orientativas y los acuerdos de estudio deben quedar compensados en los créditos totales de origen y destino.</i></p>
+       <table>
+      <tbody>
+        <tr>
+          <td><b>Universidad de Granada</b></td>
+          <td><b>Universidad de destino</b></td>
+        </tr>
+        <tr>
+          <td>Patrimonio Audiovisual <i>(6 ECTS)</i></td>
+          <td>The History of European Art  <i>(3 ECTS)</i> + Basic Design, Typography & Desktop Publishing  <i>(3 ECTS)</i></td>
+        </tr>
+        <tr>
+          <td>Gestión de la Documentación Audiovisual  <i>(6 ECTS)</i> + Optatividad Genérica  <i>(1 ECTS)</i></td>
+          <td>Content Management Systems  <i>(3 ECTS)</i> + Information Visualization  <i>(4 ECTS)</i></td>
+        </tr>
+        <tr>
+          <td>Guion Audiovisual  <i>(6 ECTS)</i> + Optatividad Genérica  <i>(2 ECTS)</i></td>
+          <td>Language in Communication: How it works  <i>(4 ECTS)</i> + Philosophy and pop culture  <i>(4 ECTS)</i></td>
+        </tr>
+        <tr>
+          <td>Derecho de las Telecomunicaciones  <i>(6 ECTS)</i></td>
+          <td>International Humanitarian Law  <i>(5 ECTS)</i></td>
+        </tr>
+        <tr>
+          <td>Sistema Mediático  <i>(6 ECTS)</i></td>
+          <td>Media, Politics and Globalisation  <i>(5 ECTS)</i></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <!-- Mapa a la derecha -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2400.046787147758!2d18.568624476377913!3d53.019521899127504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47033452a2bfc1a5%3A0x43fa7a02030cbcd7!2sUniversidad%20Nicol%C3%A1s%20Corp%C3%A9nico%20de%20Toru%C5%84!5e0!3m2!1ses!2ses!4v1744270746517!5m2!1ses!2ses"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="container2"></iframe>
+
+    <!-- Carrusel dentro del contenedor del video -->
+    <div class="video-container">
+      <div class="carrousel">
+        <div class="conteCarrousel">
+          <div class="itemCarrousel" id="itemCarrousel-1">
+            <div class="itemCarrouselTarjeta"><iframe width=100% height=100%
+                src="https://www.youtube.com/embed/SwwSvLRetr0?si=1K7sJBSYGSbQdk5Z" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <a href="#itemCarrousel-3">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#itemCarrousel-2">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+          <div class="itemCarrousel" id="itemCarrousel-2">
+            <div class="itemCarrouselTarjeta"><iframe width=100% height=100%
+                src="https://www.youtube.com/embed/UY3FBoRcEzM?si=MVLdMDHqIXsMQChV" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <a href="#itemCarrousel-1">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#itemCarrousel-3">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+          <div class="itemCarrousel" id="itemCarrousel-3">
+            <div class="itemCarrouselTarjeta"><iframe width=100% height=100%
+                src="https://www.youtube.com/embed/wTl8gPnk1zc?si=g-Bw5T_zZL3B9r_A" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <a href="#itemCarrousel-2">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#itemCarrousel-1">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="conteCarrouselController">
+          <a href="#itemCarrousel-1">•</a>
+          <a href="#itemCarrousel-2">•</a>
+          <a href="#itemCarrousel-3">•</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

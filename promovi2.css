@@ -1,0 +1,238 @@
+/* Estilo general del fondo y el cuerpo */
+body {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    margin: 0;
+    position: relative;
+}
+
+/* Contenedor principal */
+.container {
+    width: 1200px;
+    height: 600px;
+    background-color: #2D4E51;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid #000000;
+    overflow: visible;
+    position: relative;
+    font-size: 14px;
+}
+/* Estilo para los países en el mapa */
+.country {
+    fill: #3D7373;
+    stroke: #000000;
+    vector-effect: non-scaling-stroke;
+    stroke-width: 1px;
+    cursor: pointer;
+}
+
+/* Color inicial para los países destacados */
+.country.highlighted {
+    fill: #98DADF;
+}
+
+/* Efecto hover solo en países destacados */
+.country.highlighted:hover {
+    fill: #E5E1E2;
+}
+
+/* Para los enlaces */
+
+a {
+    color: white;
+}
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none;
+    display: none;
+    white-space: nowrap;
+}
+
+/* Carrusel */
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+#itemCarrousel-1{
+    background-color: rgb(226, 50, 50);
+}
+
+#itemCarrousel-2{
+    background-color: rgb(50, 200, 226);
+}
+
+#itemCarrousel-3{
+    background-color: rgb(200, 226, 50);
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > :hover{
+    color: #98DADF;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+/* Video-container ajustado para carrusel */
+.video-container{
+    position: absolute;
+    bottom: -50px;
+    display: flex;
+    left: 600px;
+    width: 570px;
+    height: 350px; /* Ajustar el tamaño del contenedor */
+}
+
+/* Otros estilos */
+.container2 {
+    width: 570px !important;
+    height: 230px !important;
+    position: absolute;
+    display: flex;
+    bottom: 320px;
+    right: auto; /* Asegúrate de restablecer right */
+    left: 600px;  /* Ajusta el valor según lo necesario */
+    border: 0;
+}
+
+.container3 {
+    width: 550px !important;
+    height: 570px !important;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    overflow: hidden;
+    background-color: transparent ;
+    
+
+    
+}
+
+/* Estilos para el menú*/
+nav {
+    margin-top: 20px;
+}
+
+.menu {
+    background-color: #3D7373;
+    padding: 0px 0;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 144.5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu li a {
+    padding: 10px;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+
+
+table , td, th {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+    text-align: center;
+}
+td, th {
+	padding: 3px;
+	width: 500px;
+	height: 10px;
+    font-size: 13.5px;
+}
+th {
+	background: #f0e6cc;
+}
+.even {
+	background: #fbf8f0;
+}
+.odd {
+	background: #fefcf9;
+}
